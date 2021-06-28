@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Document</title>
+    <style>
+        
+    </style>
+   
+
+</head>
+<body>
+    <h1>GCUAF GPA CALCULATOR</h1>
+
+
+<script>
+let OB = prompt("Enter Your OB Marks");
+let SPM = prompt("Enter Your SPM Marks");
+let SM = prompt("Enter Your SM Marks");
+let MTSE = prompt("Enter Your MTSE Marks");
+let ESA = prompt("Enter Your ESA Marks");
+let credit = prompt("Enter Your Semester Credit Hour!")
+
+let QPOB;
+if(OB>=48){ QPOB = 12;}else{ QPOB=OB/4;}
+console.log(QPOB);  
+
+
+let QPSPM;
+if(SPM>=48){ QPSPM = 12;}else{ QPSPM=SPM/4;} 
+console.log(QPSPM);   
+
+let QPSM;
+if(SM>=48){ QPSM = 12;}else{ QPSM=SM/4;}
+console.log(QPSM );  
+
+let QPMTSE;
+if(MTSE>=48){ QPMTSE = 12;}else{ QPMTSE=MTSE/4;}
+console.log(QPMTSE);  
+
+let QPESA;
+if(ESA>=48){ QPESA = 12;}else{ QPESA=ESA/4;}
+console.log(QPESA); 
+
+let totalQP = QPOB + QPSPM + QPSM + QPMTSE + QPESA;
+console.log(totalQP/credit);
+
+let GPA = totalQP/credit;
+
+</script>
+    
+</body>
+</html>
